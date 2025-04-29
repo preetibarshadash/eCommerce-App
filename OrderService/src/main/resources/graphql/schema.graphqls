@@ -1,0 +1,32 @@
+type Order {
+    id: String
+    userId: String
+    orderItems: [OrderItemDTO]  # Output type, renamed to OrderItemDTO
+    totalAmount: Float
+    status: String
+}
+
+# Input type for order items
+input OrderItem {
+    productId: String
+    quantity: Int
+}
+
+# DTO used to create an order
+input OrderRequestDTO {
+    orderItems: [OrderItem]  # Use input type here
+}
+
+# Output type for individual order items (this is what will be returned in the Order)
+type OrderItemDTO {
+    productId: String
+    quantity: Int
+}
+
+type Query {
+    getOrders: [Order]
+}
+
+type Mutation {
+    createOrder(orderRequest: OrderRequestDTO, Authorization: String): Order
+}
