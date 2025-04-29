@@ -1,3 +1,12 @@
 [submodule "api-gateway"]
 	path = api-gateway
 	url = https://github.com/preetibarshadash/api-gateway.git
+[submodule "ecommerce-registry"]
+	path = ecommerce-registry
+	url = https://github.com/preetibarshadash/ecommerce-registry
+[submodule "ecommerce-gateway"]
+	path = ecommerce-gateway
+	url = https://github.com/preetibarshadash/ecommerce-gateway
+[submodule "product-service"]
+	path = product-service
+	url = https://github.com/preetibarshadash/product-service.git
