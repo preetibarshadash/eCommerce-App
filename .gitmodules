@@ -10,3 +10,6 @@
 [submodule "product-service"]
 	path = product-service
 	url = https://github.com/preetibarshadash/product-service.git
+[submodule "auth-service"]
+	path = auth-service
+	url = https://github.com/preetibarshadash/auth-service
